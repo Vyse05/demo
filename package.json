@@ -6,7 +6,8 @@
   "scripts": {
     "only-ui": "npx playwright test --ui --grep @only",
     "only":  "npx playwright test --grep @only",
-    "api": "npx playwright test --grep @api"
+    "api": "npx playwright test --grep @api",
+    "ui": "npx playwright test --grep @ui"
   },
   "keywords": [],
   "author": "",
