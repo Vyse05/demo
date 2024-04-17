@@ -1,5 +1,4 @@
 import { Locator, Page, expect } from "@playwright/test";
-import { url } from "inspector";
 
 export class LoginPage {
   readonly page: Page;
@@ -16,6 +15,7 @@ export class LoginPage {
 
   public async gotoLoginPage(URL: string) {
     await this.page.goto(URL);
+    await expect(this.page).toHaveURL(URL);
   }
 
   public async login(username: string, password: string, loggedInUrl: string) {
