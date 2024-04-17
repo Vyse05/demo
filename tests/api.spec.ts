@@ -17,7 +17,7 @@ test("Retreive a list of users containing at least one name with letter C @api",
 });
 
 test("Write out all users from the list in the console @api", async () => {
-  await gorestApi.checkIfListNotEmpty(response);
+  await gorestApi.checkIfListNotEmpty(response); //we reuse the existing method as the verify conditions are the same 
   await gorestApi.listOutUsersInConsole(response);
 });
 
